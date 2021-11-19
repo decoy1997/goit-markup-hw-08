@@ -192,8 +192,9 @@ p {
 
 .header-contacts {
   display: flex;
-  align-items: center;
   margin-left: auto;
+  padding-top: 21px;
+  padding-bottom: 21px;
 }
 
 @media screen and (min-width: 768px) {
@@ -210,15 +211,16 @@ p {
   line-height: 1.15;
   font-weight: 500;
   display: flex;
-  align-items: center;
   text-decoration: none;
-  padding-bottom: 21px;
-  padding-top: 21px;
   transition: color 250ms ease;
 }
 
 .header-contacts__link:hover, .header-contacts__link:focus {
   color: var(--logo-specific-color);
+}
+
+.header-contacts__item:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -228,7 +230,7 @@ p {
 }
 
 .header-contacts__icon {
-  margin-right: 10px;
+  margin-right: 8px;
   fill: currentColor;
   transition: fill 250ms ease;
 }

@@ -57,8 +57,10 @@
 
 .header-contacts {
   display: flex;
-  align-items: center;
+
   margin-left: auto;
+  padding-top: 21px;
+  padding-bottom: 21px;
   @media screen and(min-width:768px) {
     flex-direction: column;
     margin-left: 84px;
@@ -71,10 +73,8 @@
   line-height: 1.15;
   font-weight: 500;
   display: flex;
-  align-items: center;
+
   text-decoration: none;
-  padding-bottom: 21px;
-  padding-top: 21px;
   // padding-top: 32px;
   // padding-bottom: 32px;
   transition: color 250ms ease;
@@ -85,6 +85,9 @@
 }
 
 .header-contacts__item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
   @media screen and(min-width:1200px) {
     &:not(:last-child) {
       margin-right: 50px;
@@ -92,7 +95,7 @@
   }
 }
 .header-contacts__icon {
-  margin-right: 10px;
+  margin-right: 8px;
   fill: currentColor;
   transition: fill 250ms ease;
   &:hover,
