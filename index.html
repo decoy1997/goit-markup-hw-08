@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="./CSS/main.min.css" />
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container nav">
         <nav class="header-nav">
           <a href="./index.html" class="logo"> <span class="logo-web">Web</span>Studio </a>
@@ -57,7 +57,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <main>
       <!--Main section-->
       <section class="hero-overlay">
@@ -121,7 +121,7 @@
           <h2 class="team-border__title section-title">Наша команда</h2>
           <ul class="team-section list">
             <li class="team-section__items">
-              <img src="./images/img-1.jpg" alt="product designer" width="270" />
+              <img src="./images/img-1.jpg" alt="product designer" width="270" class="img-team" />
               <div class="team-section__descr">
                 <h3 class="team-section__title">Игорь Демьяненко</h3>
                 <p class="team-section__text">Product Designer</p>
@@ -158,7 +158,7 @@
               </div>
             </li>
             <li class="team-section__items">
-              <img src="./images/img-2.jpg" alt="frontend developer" width="270" />
+              <img src="./images/img-2.jpg" alt="frontend developer" width="270" class="img-team" />
               <div class="team-section__descr">
                 <h3 class="team-section__title">Ольга Репина</h3>
                 <p class="team-section__text">Frontend Developer</p>
@@ -195,7 +195,7 @@
               </div>
             </li>
             <li class="team-section__items">
-              <img src="./images/img-3.jpg" alt="marketing" width="270" />
+              <img src="./images/img-3.jpg" alt="marketing" width="270" class="img-team" />
               <div class="team-section__descr">
                 <h3 class="team-section__title">Николай Тарасов</h3>
                 <p class="team-section__text">Marketing</p>
@@ -232,7 +232,7 @@
               </div>
             </li>
             <li class="team-section__items">
-              <img src="./images/img-4.jpg" alt="ui designer" width="270" />
+              <img src="./images/img-4.jpg" alt="ui designer" width="270" class="img-team" />
               <div class="team-section__descr">
                 <h3 class="team-section__title">Михаил Ермаков</h3>
                 <p class="team-section__text">UI Designer</p>
@@ -272,9 +272,9 @@
         </div>
       </section>
       <!-- Clients-section -->
-      <section class="clients-section">
+      <section class="clients-section section">
         <div class="clients-section-wrap container">
-          <h2 class="clients-text">Постоянные клиенты</h2>
+          <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="clients list">
             <li class="clients-item">
               <a href="" class="clients-item-link link">
@@ -367,7 +367,6 @@
         <div class="follow-us">
           <h2 class="follow-us-title">Подпишитесь на рассылку</h2>
           <form class="follow-us-form">
-            <!-- <label for="mail">Email</label> -->
             <input type="email" id="mail" placeholder="E-mail" />
             <button type="submit" class="follow-btn">
               Подписаться
@@ -379,7 +378,8 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <!-- Backdrop -->
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-modal" data-modal-close>
           <svg class="modal-cross">
@@ -399,9 +399,10 @@
                   <use href="./images/sprite.svg#name-form"></use>
                 </svg>
               </span>
-            </div>
+            </div> -->
 
-            <div class="modal-form-label">
+    <!-- Modal page -->
+    <!-- <div class="modal-form-label">
               <label for="phone" class="modal-label">Телефон</label>
               <span class="input-form">
                 <input type="tel" name="phone" id="phone" />
@@ -420,9 +421,10 @@
                   <use href="./images/sprite.svg#email-form"></use>
                 </svg>
               </span>
-            </div>
+            </div> -->
 
-            <div class="modal-form-label">
+    <!-- Modal page markup -->
+    <!-- <div class="modal-form-label">
               <label for="textarea" class="modal-label">Комментарий</label>
               <textarea
                 name="textarea"
@@ -452,7 +454,7 @@
           </div>
         </form>
       </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
   </body>
 </html>
