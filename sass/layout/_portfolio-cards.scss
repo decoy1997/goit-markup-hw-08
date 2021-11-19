@@ -3,6 +3,7 @@
   margin-right: -30px;
   display: flex;
   flex-wrap: wrap;
+  cursor: pointer;
 }
 .portfolio-img {
   &:hover {
@@ -30,10 +31,16 @@
 }
 .portfolio-img {
   border: 1px solid var(--border-img-portf);
-  flex-basis: calc(100% / 3 - 30px);
+  flex-basis: calc(100% / 1 - 30px);
   margin-bottom: 30px;
   margin-right: 30px;
   transition: box-shadow 250ms ease;
+  @media screen and(min-width:768px) {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+  @media screen and(min-width:1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
 .port-img-descr {
   padding: 20px 24px;

@@ -27,10 +27,19 @@
 .port-btn-item {
   &:not(:last-child) {
     margin-right: 8px;
+    margin-bottom: 15px;
   }
 }
 .portfolio-filter-btn {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  justify-content: left;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  @media screen and(min-width:768px) {
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  @media screen and(min-width:1200px) {
+    margin-bottom: 35px;
+  }
 }
