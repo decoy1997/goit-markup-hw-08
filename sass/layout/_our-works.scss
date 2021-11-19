@@ -1,0 +1,29 @@
+.works-section {
+  padding-top: 47px;
+}
+.works-section__list {
+  display: flex;
+}
+
+.works-section__item {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.works-section__descr {
+  display: flex;
+  position: absolute;
+  margin: 0;
+  color: var(--icon-team-cont-accent);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  height: 70px;
+  width: 100%;
+  background-color: var(--img-descr-overlay);
+  bottom: 0;
+}
