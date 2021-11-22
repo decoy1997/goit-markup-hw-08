@@ -25,6 +25,11 @@
   <body>
     <header class="header">
       <div class="container nav">
+        <button type="button" class="menu-open">
+          <svg class="menu-open__btn">
+            <use href="./images/sprite.svg#menu-mob-open"></use>
+          </svg>
+        </button>
         <nav class="header-nav">
           <a href="./index.html" class="logo"> <span class="logo-web">Web</span>Studio </a>
           <ul class="header-nav__list list">
@@ -61,11 +66,7 @@
           </li>
         </ul>
       </div>
-      <button type="button" class="menu-open">
-        <svg class="menu-open__btn">
-          <use href="./images/sprite.svg#menu-mob-open"></use>
-        </svg>
-      </button>
+
       <div class="mob-menu visually-hidden">
         <div class="menu-top">
           <button type="button" class="menu-close">
@@ -74,6 +75,7 @@
             </svg>
           </button>
           <div class="mob-menu-wrap">
+            <div class="mob-menu-wrapper">
             <ul class="mob-menu__list list">
               <li class="mob-menu__item">
                 <a href="./index.html" class="mob-menu__link link mob-menu__link_current">Студия</a>
@@ -92,6 +94,7 @@
                   info@devstudio.com</a
                 >
               </li>
+              </div>
             </ul>
             <ul class="mob-menu-socials list">
               <li class="mob-menu-socials__item">
