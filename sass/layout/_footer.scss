@@ -37,6 +37,9 @@
   text-decoration: none;
   line-height: 1.71;
   margin-bottom: 8px;
+  @media screen and(min-width:768px) {
+    width: 231px;
+  }
   @media screen and(min-width:1200px) {
     margin-bottom: 9px;
   }

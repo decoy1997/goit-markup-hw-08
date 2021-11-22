@@ -395,7 +395,6 @@ p {
 }
 
 .hero-overlay {
-  max-width: 480px;
   height: 400px;
   background-color: var(--footer-color);
   margin-left: auto;
@@ -855,6 +854,12 @@ p {
   text-decoration: none;
   line-height: 1.71;
   margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .address {
+    width: 231px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1403,8 +1408,14 @@ p {
 .policy {
   margin-bottom: 30px;
   color: var(--secondary-text-color);
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
+}
+
+@media screen and (min-width: 1200px) {
+  .policy {
+    font-size: 14px;
+  }
 }
 
 .policy-link {
@@ -1429,7 +1440,13 @@ p {
 
 .checkbox-label {
   position: relative;
-  padding-left: 36px;
+  padding-left: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox-label {
+    padding-left: 36px;
+  }
 }
 
 .checkbox-icon-wrap {
@@ -1443,7 +1460,13 @@ p {
   justify-content: center;
   position: absolute;
   top: 0;
-  left: 13px;
+  left: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox-icon-wrap {
+    left: 13px;
+  }
 }
 
 .input-check:checked + .checkbox-label span {

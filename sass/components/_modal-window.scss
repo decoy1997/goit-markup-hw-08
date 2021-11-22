@@ -183,8 +183,11 @@
 .policy {
   margin-bottom: 30px;
   color: var(--secondary-text-color);
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
+  @media screen and(min-width:1200px) {
+    font-size: 14px;
+  }
 }
 
 .policy-link {
@@ -209,7 +212,10 @@
 }
 .checkbox-label {
   position: relative;
-  padding-left: 36px;
+  padding-left: 20px;
+  @media screen and(min-width:1200px) {
+    padding-left: 36px;
+  }
 }
 .checkbox-icon-wrap {
   width: 15px;
@@ -223,7 +229,10 @@
 
   position: absolute;
   top: 0;
-  left: 13px;
+  left: 0;
+  @media screen and(min-width:1200px) {
+    left: 13px;
+  }
 }
 .input-check {
   &:checked {
