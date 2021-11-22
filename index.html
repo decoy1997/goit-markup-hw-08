@@ -29,12 +29,16 @@
           <a href="./index.html" class="logo"> <span class="logo-web">Web</span>Studio </a>
           <ul class="header-nav__list list">
             <li class="header-nav__item">
-              <a href="./index.html" class="header-nav__link header-nav__link_current">Студия</a>
+              <a href="./index.html" class="header-nav__link header-nav__link_current head-link"
+                >Студия</a
+              >
             </li>
             <li class="header-nav__item">
-              <a href="./portfolio.html" class="header-nav__link">Портфолио</a>
+              <a href="./portfolio.html" class="header-nav__link head-link">Портфолио</a>
             </li>
-            <li class="header-nav__item"><a href="" class="header-nav__link">Контакты</a></li>
+            <li class="header-nav__item">
+              <a href="" class="header-nav__link head-link">Контакты</a>
+            </li>
           </ul>
         </nav>
         <ul class="header-contacts list">
@@ -56,6 +60,63 @@
             >
           </li>
         </ul>
+      </div>
+      <button type="button" class="menu-open">
+        <svg class="menu-open__btn">
+          <use href="./images/sprite.svg#menu-mob-open"></use>
+        </svg>
+      </button>
+      <div class="mob-menu visually-hidden">
+        <div class="menu-top">
+          <button type="button" class="menu-close">
+            <svg class="menu-open__btn">
+              <use href="./images/sprite.svg#menu-mob-cross"></use>
+            </svg>
+          </button>
+          <div class="mob-menu-wrap">
+            <ul class="mob-menu__list list">
+              <li class="mob-menu__item">
+                <a href="./index.html" class="mob-menu__link link mob-menu__link_current">Студия</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="./portfolio.html" class="mob-menu__link link">Портфолио</a>
+              </li>
+              <li class="mob-menu__item"><a href="" class="mob-menu__link link">Контакты</a></li>
+            </ul>
+            <ul class="mob-menu-contacts list">
+              <li class="mob-menu-contacts__item">
+                <a href="tel:+380961111111" class="mob-menu-contacts__link link"> +380961111111</a>
+              </li>
+              <li class="mob-menu-contacts__item">
+                <a href="mailto:info@devstudio.com" class="mob-menu-contacts__linkm link">
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-menu-socials list">
+              <li class="mob-menu-socials__item">
+                <a href="" class="mob-menu-socials__link link">
+                  Instagram <span class="mob-menu__socials_add">|</span></a
+                >
+              </li>
+              <li class="mob-menu-socials__item">
+                <a href="" class="mob-menu-socials__link link"
+                  >Twitter <span class="mob-menu__socials_add">|</span></a
+                >
+              </li>
+              <li class="mob-menu-socials__item">
+                <a href="" class="mob-menu-socials__link link"
+                  >Facebook <span class="mob-menu__socials_add">|</span></a
+                >
+              </li>
+              <li class="mob-menu-socials__item">
+                <a href="" class="mob-menu-socials__link link"
+                  >LinkedIn <span class="mob-menu__socials_add">|</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -121,7 +182,30 @@
           <h2 class="team-border__title section-title">Наша команда</h2>
           <ul class="team-section list">
             <li class="team-section__items">
-              <img src="./images/img-1.jpg" alt="product designer" width="270" class="img-team" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/1x2x/team-img1-desc-min.jpg  1x,
+                    ./images/1x2x/team-img1-desc2-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/1x2x/team-img1-tab-min.jpg  1x,
+                    ./images/1x2x/team-img1-tab2-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/1x2x/team-img1-mob-min.jpg  1x,
+                    ./images/1x2x/team-img1-mob2-min.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/1x2x/team-img1-desc-min.jpg" alt="team1" />
+              </picture>
               <div class="team-section__descr">
                 <h3 class="team-section__title">Игорь Демьяненко</h3>
                 <p class="team-section__text">Product Designer</p>
@@ -158,7 +242,30 @@
               </div>
             </li>
             <li class="team-section__items">
-              <img src="./images/img-2.jpg" alt="frontend developer" width="270" class="img-team" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/1x2x/team-img2-desc-min.jpg  1x,
+                    ./images/1x2x/team-img2-desc2-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/1x2x/team-img2-tab-min.jpg  1x,
+                    ./images/1x2x/team-img2-tab2-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/1x2x/team-img2-mob-min.jpg  1x,
+                    ./images/1x2x/team-img2-mob2-min.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/1x2x/team-img2-desc-min.jpg" alt="team2" />
+              </picture>
               <div class="team-section__descr">
                 <h3 class="team-section__title">Ольга Репина</h3>
                 <p class="team-section__text">Frontend Developer</p>
@@ -195,7 +302,30 @@
               </div>
             </li>
             <li class="team-section__items">
-              <img src="./images/img-3.jpg" alt="marketing" width="270" class="img-team" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/1x2x/team-img3-desc-min.jpg  1x,
+                    ./images/1x2x/team-img3-desc2-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/1x2x/team-img3-tab-min.jpg  1x,
+                    ./images/1x2x/team-img3-tab2-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/1x2x/team-img3-mob-min.jpg  1x,
+                    ./images/1x2x/team-img3-mob2-min.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/1x2x/team-img3-desc-min.jpg" alt="team3" />
+              </picture>
               <div class="team-section__descr">
                 <h3 class="team-section__title">Николай Тарасов</h3>
                 <p class="team-section__text">Marketing</p>
@@ -232,7 +362,30 @@
               </div>
             </li>
             <li class="team-section__items">
-              <img src="./images/img-4.jpg" alt="ui designer" width="270" class="img-team" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/1x2x/team-img4-desc-min.jpg  1x,
+                    ./images/1x2x/team-img4-desc2-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/1x2x/team-img4-tab-min.jpg  1x,
+                    ./images/1x2x/team-img4-tab2-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/1x2x/team-img4-mob-min.jpg  1x,
+                    ./images/1x2x/team-img4-mob2-min.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/1x2x/team-img4-desc-min.jpg" alt="team4" />
+              </picture>
               <div class="team-section__descr">
                 <h3 class="team-section__title">Михаил Ермаков</h3>
                 <p class="team-section__text">UI Designer</p>
@@ -381,7 +534,7 @@
       </div>
     </footer>
     <!-- Backdrop -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-modal" data-modal-close>
           <svg class="modal-cross">
@@ -401,10 +554,10 @@
                   <use href="./images/sprite.svg#name-form"></use>
                 </svg>
               </span>
-            </div> -->
+            </div>
 
-    <!-- Modal page -->
-    <!-- <div class="modal-form-label">
+            <!-- Modal page -->
+            <div class="modal-form-label">
               <label for="phone" class="modal-label">Телефон</label>
               <span class="input-form">
                 <input type="tel" name="phone" id="phone" />
@@ -423,10 +576,10 @@
                   <use href="./images/sprite.svg#email-form"></use>
                 </svg>
               </span>
-            </div> -->
+            </div>
 
-    <!-- Modal page markup -->
-    <!-- <div class="modal-form-label">
+            <!-- Modal page markup -->
+            <div class="modal-form-label">
               <label for="textarea" class="modal-label">Комментарий</label>
               <textarea
                 name="textarea"
@@ -456,7 +609,8 @@
           </div>
         </form>
       </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

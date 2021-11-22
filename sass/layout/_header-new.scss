@@ -1,0 +1,123 @@
+//    <!-- <div class="mob-menu">
+//         <ul class="mob-menu__list list">
+//           <li class="mob-menu__item">
+//             <a href="./index.html" class="header-nav__link header-nav__link_current">Студия</a>
+//           </li>
+//           <li class="mob-menu__item">
+//             <a href="./portfolio.html" class="header-nav__link">Портфолио</a>
+//           </li>
+//           <li class="mob-menu__item"><a href="" class="header-nav__link">Контакты</a></li>
+//         </ul>
+//       </div> -->
+
+.header {
+  border-bottom: 1px solid var(--border-nav-col);
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+  @media screen and(min-width:1200px) {
+    display: block;
+  }
+}
+
+.container.nav {
+  display: flex;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav__list {
+  letter-spacing: 0.02em;
+  display: flex;
+  @media screen and(min-width:768px) {
+    margin-left: 88px;
+  }
+  @media screen and(min-width:1200px) {
+    margin-left: 93px;
+  }
+}
+.header-nav__link {
+  display: block;
+  color: var(--main-text-color);
+  // padding-top: 32px;
+  // padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+  transition: color 250ms ease;
+  &:hover,
+  &:focus {
+    color: var(--logo-specific-color);
+  }
+}
+
+.header-nav__link_current {
+  color: var(--logo-specific-color);
+}
+
+.header-nav__item {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.header-contacts {
+  display: flex;
+
+  margin-left: auto;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  @media screen and(min-width:768px) {
+    flex-direction: column;
+    margin-left: 84px;
+  }
+}
+.header-contacts__link {
+  color: var(--secondary-text-color);
+  letter-spacing: 0.02em;
+  font-size: 14px;
+  line-height: 1.15;
+  font-weight: 500;
+  display: flex;
+
+  text-decoration: none;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
+  transition: color 250ms ease;
+  &:hover,
+  &:focus {
+    color: var(--logo-specific-color);
+  }
+}
+
+.header-contacts__item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  @media screen and(min-width:1200px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}
+.header-contacts__icon {
+  margin-right: 8px;
+  fill: currentColor;
+  transition: fill 250ms ease;
+  &:hover,
+  &:focus {
+    fill: currentColor;
+  }
+}
+// .mob-menu {
+//   display: block;
+//   width: 100vw;
+//   height: 100vh;
+// }
