@@ -890,6 +890,9 @@ p {
 @media screen and (min-width: 1200px) {
   .footer-style {
     display: flex;
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -992,6 +995,13 @@ p {
   align-items: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .follow-us-form {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
 .follow-us-form input {
   color: var(--icon-team-cont-accent);
   font-size: 14px;
@@ -1010,6 +1020,14 @@ p {
 @media screen and (min-width: 480px) {
   .follow-us-form input {
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .follow-us-form input {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
   }
 }
 
