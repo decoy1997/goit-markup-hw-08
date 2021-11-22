@@ -282,7 +282,7 @@ p {
 .mob-menu-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .menu-open {
