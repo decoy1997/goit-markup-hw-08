@@ -279,12 +279,6 @@ p {
   height: 40px;
 }
 
-.mob-menu-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .menu-open {
   background-color: transparent;
   width: 40px;
@@ -344,9 +338,6 @@ p {
 }
 
 .mob-menu-wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   padding-left: 40px;
 }
 
@@ -371,7 +362,7 @@ p {
 }
 
 .mob-menu__list {
-  margin-bottom: 64px;
+  margin-bottom: 302px;
 }
 
 .mob-menu-contacts {
@@ -384,7 +375,7 @@ p {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .mob-menu-socials {
@@ -1112,11 +1103,22 @@ p {
 }
 
 .portfolio-main-section {
-  margin-bottom: -30px;
-  margin-right: -30px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-main-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-main-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .portfolio-img:hover {
@@ -1144,22 +1146,6 @@ p {
 
 .portfolio-img {
   border: 1px solid var(--border-img-portf);
-  flex-basis: calc(100% / 1 - 30px);
-  margin-bottom: 30px;
-  transition: box-shadow 250ms ease;
-}
-
-@media screen and (min-width: 768px) {
-  .portfolio-img {
-    flex-basis: calc(100% / 2 - 30px);
-    margin-right: 30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .portfolio-img {
-    flex-basis: calc(100% / 3 - 30px);
-  }
 }
 
 .port-img-descr {
